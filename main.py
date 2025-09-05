@@ -81,4 +81,3 @@ async def history():
     rows = cur.fetchall()
     conn.close()
     return [{"question": q, "answer": a, "timestamp": t} for q, a, t in rows]
-
